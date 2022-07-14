@@ -23,7 +23,7 @@ const ball = {
     velocityX : 5,
     velocityY : 5,
     speed : 7,
-    color : "WHITE"
+    color : "ORANGE"
 }
 
 // User Paddle
@@ -31,19 +31,19 @@ const user = {
     x : 0, // left side of canvas
     y : (canvas.height - 100)/2, // -100 the height of paddle
     width : 10,
-    height : 100,
+    height : 80,
     score : 0,
-    color : "WHITE"
+    color : "ORANGE"
 }
 
 // COM Paddle
 const com = {
     x : canvas.width - 10, // - width of paddle
     y : (canvas.height - 100)/2, // -100 the height of paddle
-    width : 10,
-    height : 100,
+    width : 8,
+    height : 80,
     score : 0,
-    color : "WHITE"
+    color : "ORANGE"
 }
 
 // NET
@@ -52,7 +52,7 @@ const net = {
     y : 0,
     height : 10,
     width : 2,
-    color : "WHITE"
+    color : "ORANGE"
 }
 
 // draw a rectangle, will be used to draw paddles
@@ -202,7 +202,7 @@ function game(){
     render();
 }
 // number of frames per second
-let framePerSecond = 50;
+let framePerSecond = 85;
 
-//call the game function 50 times every 1 Sec
+//call the game function 100 times every 1 Sec
 let loop = setInterval(game,1000/framePerSecond);
