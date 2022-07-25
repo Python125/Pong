@@ -202,7 +202,7 @@ function game(){
     render();
 }
 // number of frames per second
-let framePerSecond = 85;
+let framePerSecond = 90;
 
 //call the game function 100 times every 1 Sec
 let loop = setInterval(game,1000/framePerSecond);
